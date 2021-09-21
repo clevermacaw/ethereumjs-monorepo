@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632169078885,
+  "lastUpdate": 1632209833906,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "a2ed1a10761e753d8a38fba4859aa8f8d0294df4",
-          "message": "client: Fix connection issues with geth when using custom genesis file (#1423)\n\n* devp2p: improved RLPx message sending and protocol selection code and debug message\r\n\r\n* devp2p: lint fixes\r\n\r\n* Add forkhash calculation to parse utilities\r\n\r\n* update customGenesis path handling/formatNonce\r\n\r\n* clarify customGenesis param description\r\n\r\n* Fix function name change in tests\r\n\r\n* Move fork hash calculation to common constructor\r\n\r\n* throw when spurious dragon block numbers don't match\r\n\r\n* Update tests\r\n\r\n* Add example usage for custom geth params\r\n\r\n* reorganize cli params and function names\r\n\r\n* readme updates, cli tweaks, and test fixes\r\n\r\n* requested edits\r\n\r\n* nit fix :-)\r\n\r\n* clarify geth setup instructions\r\n\r\n* Move examples to separate doc\r\n\r\nCo-authored-by: holgerd77 <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-08-27T10:51:40+02:00",
-          "tree_id": "3e68ae952d23e3cc0d808b75089734ada1e44187",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/a2ed1a10761e753d8a38fba4859aa8f8d0294df4"
-        },
-        "date": 1630054619523,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 18135,
-            "range": "±13.16%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 21179,
-            "range": "±2.40%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 19098,
-            "range": "±2.62%",
-            "unit": "ops/sec",
-            "extra": "74 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 10943,
-            "range": "±18.25%",
-            "unit": "ops/sec",
-            "extra": "46 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 12715,
-            "range": "±25.15%",
-            "unit": "ops/sec",
-            "extra": "55 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1254,
-            "range": "±6.44%",
-            "unit": "ops/sec",
-            "extra": "61 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 117,
-            "range": "±119.18%",
-            "unit": "ops/sec",
-            "extra": "29 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 118,
-            "range": "±28.14%",
-            "unit": "ops/sec",
-            "extra": "56 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.82,
-            "range": "±143.24%",
-            "unit": "ops/sec",
-            "extra": "16 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±112.10%",
             "unit": "ops/sec",
             "extra": "17 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e289a7825dd8d701204ecccfc90ad40111d58faf",
+          "message": "monorepo: dedupe prepublish script (#1481)\n\n* add config prepublish script\r\n\r\n* remove greenkeeper.json (greenkeeper no longer being run since 2020-06-03)",
+          "timestamp": "2021-09-21T09:31:30+02:00",
+          "tree_id": "005a82716a498017d54fcd7e22cf803e3db3971c",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e289a7825dd8d701204ecccfc90ad40111d58faf"
+        },
+        "date": 1632209833270,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 11475,
+            "range": "±13.27%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 12695,
+            "range": "±3.31%",
+            "unit": "ops/sec",
+            "extra": "77 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12018,
+            "range": "±3.77%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 6559,
+            "range": "±27.32%",
+            "unit": "ops/sec",
+            "extra": "43 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 13411,
+            "range": "±4.11%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1068,
+            "range": "±7.37%",
+            "unit": "ops/sec",
+            "extra": "62 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 136,
+            "range": "±81.47%",
+            "unit": "ops/sec",
+            "extra": "45 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 103,
+            "range": "±31.83%",
+            "unit": "ops/sec",
+            "extra": "58 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 11.07,
+            "range": "±111.02%",
+            "unit": "ops/sec",
+            "extra": "27 samples"
           }
         ]
       }
