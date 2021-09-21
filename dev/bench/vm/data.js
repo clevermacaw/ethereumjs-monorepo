@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632169093792,
+  "lastUpdate": 1632209800358,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "a2ed1a10761e753d8a38fba4859aa8f8d0294df4",
-          "message": "client: Fix connection issues with geth when using custom genesis file (#1423)\n\n* devp2p: improved RLPx message sending and protocol selection code and debug message\r\n\r\n* devp2p: lint fixes\r\n\r\n* Add forkhash calculation to parse utilities\r\n\r\n* update customGenesis path handling/formatNonce\r\n\r\n* clarify customGenesis param description\r\n\r\n* Fix function name change in tests\r\n\r\n* Move fork hash calculation to common constructor\r\n\r\n* throw when spurious dragon block numbers don't match\r\n\r\n* Update tests\r\n\r\n* Add example usage for custom geth params\r\n\r\n* reorganize cli params and function names\r\n\r\n* readme updates, cli tweaks, and test fixes\r\n\r\n* requested edits\r\n\r\n* nit fix :-)\r\n\r\n* clarify geth setup instructions\r\n\r\n* Move examples to separate doc\r\n\r\nCo-authored-by: holgerd77 <Holger.Drewes@gmail.com>",
-          "timestamp": "2021-08-27T10:51:40+02:00",
-          "tree_id": "3e68ae952d23e3cc0d808b75089734ada1e44187",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/a2ed1a10761e753d8a38fba4859aa8f8d0294df4"
-        },
-        "date": 1630054621376,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 2068,
-            "range": "±4.97%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 2025,
-            "range": "±4.47%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 2112,
-            "range": "±1.02%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 2106,
-            "range": "±1.01%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 2066,
-            "range": "±1.14%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1627,
-            "range": "±12.52%",
-            "unit": "ops/sec",
-            "extra": "73 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1992,
-            "range": "±1.49%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1967,
-            "range": "±1.50%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1929,
-            "range": "±1.78%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1914,
-            "range": "±1.76%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±4.52%",
             "unit": "ops/sec",
             "extra": "69 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e289a7825dd8d701204ecccfc90ad40111d58faf",
+          "message": "monorepo: dedupe prepublish script (#1481)\n\n* add config prepublish script\r\n\r\n* remove greenkeeper.json (greenkeeper no longer being run since 2020-06-03)",
+          "timestamp": "2021-09-21T09:31:30+02:00",
+          "tree_id": "005a82716a498017d54fcd7e22cf803e3db3971c",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e289a7825dd8d701204ecccfc90ad40111d58faf"
+        },
+        "date": 1632209799386,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 18391,
+            "range": "±5.45%",
+            "unit": "ops/sec",
+            "extra": "79 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 19395,
+            "range": "±2.28%",
+            "unit": "ops/sec",
+            "extra": "81 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 18991,
+            "range": "±2.38%",
+            "unit": "ops/sec",
+            "extra": "80 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 14693,
+            "range": "±11.23%",
+            "unit": "ops/sec",
+            "extra": "62 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 17709,
+            "range": "±3.12%",
+            "unit": "ops/sec",
+            "extra": "76 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 18245,
+            "range": "±2.98%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 18010,
+            "range": "±3.67%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 15171,
+            "range": "±13.74%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 10215,
+            "range": "±16.75%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 16352,
+            "range": "±4.00%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
           }
         ]
       }
