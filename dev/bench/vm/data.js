@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632211239238,
+  "lastUpdate": 1632229040824,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "Holger.Drewes@gmail.com",
-            "name": "Holger Drewes",
-            "username": "holgerd77"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e8c5c15dfcfe545d3ca9938f9f3ec127c7877618",
-          "message": "Client: sendRawTransaction RPC method TxPool inclusion / generalization of HF choice for tx creation / tx pool improvements and cleanup functionality (#1428)\n\n* client -> RPC: generalize HF selection for tx creation in sendRawTransaction RPC call\r\n\r\n* client -> RPC: expand RPC test baseSetup() return values to be more flexible along test setup modification\r\n\r\n* client -> RPC: added additional sendRawTransaction RPC method sync target height test\r\n\r\n* client -> txPool, RPC: added new addTransaction() and sendTransactions() tx pool methods\r\n\r\n* client -> tx pool: only send txs to peers if the list of txs is not empty\r\n\r\n* client -> tx pool: switched to map for handled data structure to prepare for more efficient hash pool access and allow for cleanup\r\n\r\n* client -> tx pool: added two new internal types UnprefixedAddress and UnprefixedHash for more explicit hash and address string typing\r\n\r\n* client -> tx pool: improved API terminology\r\n\r\n* client -> tx pool: extract removeByHash() functionality, rewrite retrieval code\r\n\r\n* client -> tx pool: added tx pool cleanup functionality and tests",
-          "timestamp": "2021-08-27T19:35:13+02:00",
-          "tree_id": "a936d14fc00fe5ae017316d5a728ee882818b1c8",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/e8c5c15dfcfe545d3ca9938f9f3ec127c7877618"
-        },
-        "date": 1630086052554,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 1945,
-            "range": "±3.05%",
-            "unit": "ops/sec",
-            "extra": "85 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 1833,
-            "range": "±6.18%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1828,
-            "range": "±5.42%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 1834,
-            "range": "±1.49%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 1847,
-            "range": "±1.54%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1774,
-            "range": "±1.87%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1843,
-            "range": "±1.47%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1779,
-            "range": "±1.50%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1171,
-            "range": "±19.01%",
-            "unit": "ops/sec",
-            "extra": "58 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1676,
-            "range": "±2.03%",
-            "unit": "ops/sec",
-            "extra": "84 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±4.58%",
             "unit": "ops/sec",
             "extra": "62 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Holger.Drewes@gmail.com",
+            "name": "Holger Drewes",
+            "username": "holgerd77"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fcc895596435a694dcf0029b90757cf7861db6e1",
+          "message": "devp2p: added hotfix to solve RLPx snappy uncompress issue for DISCONNECT msgs along handshake (#1484)",
+          "timestamp": "2021-09-21T14:51:51+02:00",
+          "tree_id": "7945bc675bd65243fe51c1d2d86db7414afd2941",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/fcc895596435a694dcf0029b90757cf7861db6e1"
+        },
+        "date": 1632229040172,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 21036,
+            "range": "±6.21%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 22364,
+            "range": "±2.40%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 17297,
+            "range": "±12.91%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 21314,
+            "range": "±3.07%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 21289,
+            "range": "±2.97%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 20141,
+            "range": "±4.84%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 12719,
+            "range": "±16.19%",
+            "unit": "ops/sec",
+            "extra": "46 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 13480,
+            "range": "±15.14%",
+            "unit": "ops/sec",
+            "extra": "60 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 18977,
+            "range": "±3.98%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 13303,
+            "range": "±12.01%",
+            "unit": "ops/sec",
+            "extra": "45 samples"
           }
         ]
       }
