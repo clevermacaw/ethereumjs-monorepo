@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632389409964,
+  "lastUpdate": 1632399806164,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "508de0d93df24bb85719f59f55c00b88351def3b",
-          "message": "bug: fix comparison operator bug (#1451)",
-          "timestamp": "2021-09-03T08:37:14-07:00",
-          "tree_id": "00276051858bb21e796a482f0a0775c8980a1117",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/508de0d93df24bb85719f59f55c00b88351def3b"
-        },
-        "date": 1630683684222,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 21942,
-            "range": "±10.70%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 23039,
-            "range": "±2.55%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 20009,
-            "range": "±2.56%",
-            "unit": "ops/sec",
-            "extra": "77 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 8039,
-            "range": "±19.26%",
-            "unit": "ops/sec",
-            "extra": "38 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 20676,
-            "range": "±3.25%",
-            "unit": "ops/sec",
-            "extra": "76 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1377,
-            "range": "±5.19%",
-            "unit": "ops/sec",
-            "extra": "60 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 98.67,
-            "range": "±114.93%",
-            "unit": "ops/sec",
-            "extra": "22 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 159,
-            "range": "±6.65%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.54,
-            "range": "±145.66%",
-            "unit": "ops/sec",
-            "extra": "14 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2610,6 +2523,93 @@ window.BENCHMARK_DATA = {
             "range": "±116.54%",
             "unit": "ops/sec",
             "extra": "28 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "36d4a06a9590644b2cf20262b74bd53570cf20cd",
+          "message": "Ethash: add CPU miner (#1475)\n\n* ethash: add cpu miner\r\n\r\n* ethash: add miner tests, expand miner features\r\n\r\n* ethash: address type check using instanceof\r\nethash: copy common when mining\r\nethash: add common copy test\r\n\r\n* ethash: add common as devDependency\r\n\r\n* ethash: moved @ethereumjs/block library to dependencies\r\n\r\n* ethash -> miner: do not expose class members as public\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-23T14:18:17+02:00",
+          "tree_id": "ffb54b15304f5ebfc9a8706843b02dc0f854d4f8",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/36d4a06a9590644b2cf20262b74bd53570cf20cd"
+        },
+        "date": 1632399804566,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 15202,
+            "range": "±12.32%",
+            "unit": "ops/sec",
+            "extra": "68 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 16937,
+            "range": "±1.53%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 10872,
+            "range": "±16.77%",
+            "unit": "ops/sec",
+            "extra": "54 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 11394,
+            "range": "±29.26%",
+            "unit": "ops/sec",
+            "extra": "66 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 15991,
+            "range": "±2.59%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1118,
+            "range": "±6.76%",
+            "unit": "ops/sec",
+            "extra": "60 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 109,
+            "range": "±110.81%",
+            "unit": "ops/sec",
+            "extra": "29 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 127,
+            "range": "±8.45%",
+            "unit": "ops/sec",
+            "extra": "57 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 9.48,
+            "range": "±131.71%",
+            "unit": "ops/sec",
+            "extra": "23 samples"
           }
         ]
       }
