@@ -1,95 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632388215143,
+  "lastUpdate": 1632389409964,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "zachinquarantine@yahoo.com",
-            "name": "Zachinquarantine",
-            "username": "Zachinquarantine"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6d80656edc28b94750ae72a117e5dd308e42b3d6",
-          "message": "Common: Remove calaveras ephemerial testnet (#1430)\n\n* Remove calaveras json config\r\n\r\n* Remove calaveras testnet\r\n\r\n* Remove Calaveras testnet\r\n\r\n* Remove Calaveras testnet\r\n\r\n* Remove mention of Calaveras testnet\r\n\r\n* Remove mention of Calaveras testnet\r\n\r\n* Remove Calaveras testnet\r\n\r\n* Remove Calaveras\r\n\r\nCo-authored-by: acolytec3 <17355484+acolytec3@users.noreply.github.com>",
-          "timestamp": "2021-09-01T09:30:12+02:00",
-          "tree_id": "b8aaced5f950bd0d37e559a9ff607e6e318f355c",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/6d80656edc28b94750ae72a117e5dd308e42b3d6"
-        },
-        "date": 1630481754979,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "1k-3-32-ran",
-            "value": 15079,
-            "range": "±13.57%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "1k-5-32-ran",
-            "value": 16965,
-            "range": "±6.40%",
-            "unit": "ops/sec",
-            "extra": "57 samples"
-          },
-          {
-            "name": "1k-9-32-ran",
-            "value": 15857,
-            "range": "±2.37%",
-            "unit": "ops/sec",
-            "extra": "71 samples"
-          },
-          {
-            "name": "1k-1k-32-ran",
-            "value": 15293,
-            "range": "±2.61%",
-            "unit": "ops/sec",
-            "extra": "48 samples"
-          },
-          {
-            "name": "1k-1k-32-mir",
-            "value": 5356,
-            "range": "±20.97%",
-            "unit": "ops/sec",
-            "extra": "28 samples"
-          },
-          {
-            "name": "Checkpointing: 100 iterations",
-            "value": 1068,
-            "range": "±7.54%",
-            "unit": "ops/sec",
-            "extra": "63 samples"
-          },
-          {
-            "name": "Checkpointing: 500 iterations",
-            "value": 132,
-            "range": "±85.77%",
-            "unit": "ops/sec",
-            "extra": "50 samples"
-          },
-          {
-            "name": "Checkpointing: 1000 iterations",
-            "value": 101,
-            "range": "±33.58%",
-            "unit": "ops/sec",
-            "extra": "59 samples"
-          },
-          {
-            "name": "Checkpointing: 5000 iterations",
-            "value": 9.91,
-            "range": "±123.27%",
-            "unit": "ops/sec",
-            "extra": "26 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2608,6 +2521,93 @@ window.BENCHMARK_DATA = {
             "name": "Checkpointing: 5000 iterations",
             "value": 10.89,
             "range": "±111.10%",
+            "unit": "ops/sec",
+            "extra": "28 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c8fecf712c5983b18c8b465ed9979888b2daa191",
+          "message": "VM: Fix Blake2B with messages with a length >= 5 (#1486)\n\n* vm: blake2f: add test\r\n\r\n* vm: blake2f: fix Uint32 little-endian conversion\r\nvm: lint\r\n\r\n* vm: blake2f: cleanup fixed code\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-23T11:24:43+02:00",
+          "tree_id": "0d3e24e378ca8b028940ea32e1ca72467188d198",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/c8fecf712c5983b18c8b465ed9979888b2daa191"
+        },
+        "date": 1632389409217,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "1k-3-32-ran",
+            "value": 13332,
+            "range": "±11.65%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "1k-5-32-ran",
+            "value": 14860,
+            "range": "±1.98%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "1k-9-32-ran",
+            "value": 12079,
+            "range": "±9.36%",
+            "unit": "ops/sec",
+            "extra": "65 samples"
+          },
+          {
+            "name": "1k-1k-32-ran",
+            "value": 5413,
+            "range": "±33.31%",
+            "unit": "ops/sec",
+            "extra": "44 samples"
+          },
+          {
+            "name": "1k-1k-32-mir",
+            "value": 13780,
+            "range": "±3.89%",
+            "unit": "ops/sec",
+            "extra": "67 samples"
+          },
+          {
+            "name": "Checkpointing: 100 iterations",
+            "value": 1056,
+            "range": "±8.27%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Checkpointing: 500 iterations",
+            "value": 146,
+            "range": "±67.00%",
+            "unit": "ops/sec",
+            "extra": "45 samples"
+          },
+          {
+            "name": "Checkpointing: 1000 iterations",
+            "value": 118,
+            "range": "±8.51%",
+            "unit": "ops/sec",
+            "extra": "62 samples"
+          },
+          {
+            "name": "Checkpointing: 5000 iterations",
+            "value": 10.17,
+            "range": "±116.54%",
             "unit": "ops/sec",
             "extra": "28 samples"
           }
