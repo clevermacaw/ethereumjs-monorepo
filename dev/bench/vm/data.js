@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632371181256,
+  "lastUpdate": 1632388259144,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "17355484+acolytec3@users.noreply.github.com",
-            "name": "acolytec3",
-            "username": "acolytec3"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "327d2d44878deb39ef5bd1879c27fb5b94a4e232",
-          "message": "devp2p: add snappy compression to ping/pong (#1442)\n\n* devp2p:  add snappy compression to ping/pong\r\n\r\n* lint",
-          "timestamp": "2021-08-31T08:43:30+02:00",
-          "tree_id": "14fd0efd3c0ca751b0d895921ad7143ad1820690",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/327d2d44878deb39ef5bd1879c27fb5b94a4e232"
-        },
-        "date": 1630392792252,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 2180,
-            "range": "±2.19%",
-            "unit": "ops/sec",
-            "extra": "91 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 2069,
-            "range": "±4.29%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 2164,
-            "range": "±0.86%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 2146,
-            "range": "±1.05%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 2115,
-            "range": "±1.03%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 2080,
-            "range": "±1.15%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 2055,
-            "range": "±1.18%",
-            "unit": "ops/sec",
-            "extra": "93 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1502,
-            "range": "±13.98%",
-            "unit": "ops/sec",
-            "extra": "70 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1698,
-            "range": "±19.90%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1929,
-            "range": "±1.57%",
-            "unit": "ops/sec",
-            "extra": "89 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±18.72%",
             "unit": "ops/sec",
             "extra": "56 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ryan@ryanio.com",
+            "name": "Ryan Ghods",
+            "username": "ryanio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d361b55a3ff60f6450c6971ee56a92e7836d5057",
+          "message": "client: add miner london hf switch test (#1490)",
+          "timestamp": "2021-09-23T11:04:41+02:00",
+          "tree_id": "d5a22e3768ffffab0567a448192f76f1ccae39fe",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/d361b55a3ff60f6450c6971ee56a92e7836d5057"
+        },
+        "date": 1632388258471,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 14449,
+            "range": "±4.15%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 13995,
+            "range": "±6.89%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 15481,
+            "range": "±3.27%",
+            "unit": "ops/sec",
+            "extra": "78 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 14896,
+            "range": "±4.06%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 10984,
+            "range": "±16.18%",
+            "unit": "ops/sec",
+            "extra": "56 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 13141,
+            "range": "±4.51%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 14315,
+            "range": "±4.32%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 13846,
+            "range": "±4.34%",
+            "unit": "ops/sec",
+            "extra": "71 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 13985,
+            "range": "±4.65%",
+            "unit": "ops/sec",
+            "extra": "75 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 13329,
+            "range": "±7.08%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
           }
         ]
       }
