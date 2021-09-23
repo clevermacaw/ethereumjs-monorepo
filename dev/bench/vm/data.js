@@ -1,102 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1632388259144,
+  "lastUpdate": 1632389440375,
   "repoUrl": "https://github.com/ethereumjs/ethereumjs-monorepo",
   "entries": {
     "Benchmark": [
-      {
-        "commit": {
-          "author": {
-            "email": "zachinquarantine@yahoo.com",
-            "name": "Zachinquarantine",
-            "username": "Zachinquarantine"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "6d80656edc28b94750ae72a117e5dd308e42b3d6",
-          "message": "Common: Remove calaveras ephemerial testnet (#1430)\n\n* Remove calaveras json config\r\n\r\n* Remove calaveras testnet\r\n\r\n* Remove Calaveras testnet\r\n\r\n* Remove Calaveras testnet\r\n\r\n* Remove mention of Calaveras testnet\r\n\r\n* Remove mention of Calaveras testnet\r\n\r\n* Remove Calaveras testnet\r\n\r\n* Remove Calaveras\r\n\r\nCo-authored-by: acolytec3 <17355484+acolytec3@users.noreply.github.com>",
-          "timestamp": "2021-09-01T09:30:12+02:00",
-          "tree_id": "b8aaced5f950bd0d37e559a9ff607e6e318f355c",
-          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/6d80656edc28b94750ae72a117e5dd308e42b3d6"
-        },
-        "date": 1630481722905,
-        "tool": "benchmarkjs",
-        "benches": [
-          {
-            "name": "Block 9422905",
-            "value": 2128,
-            "range": "±3.69%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422906",
-            "value": 2211,
-            "range": "±1.67%",
-            "unit": "ops/sec",
-            "extra": "88 samples"
-          },
-          {
-            "name": "Block 9422907",
-            "value": 1913,
-            "range": "±6.61%",
-            "unit": "ops/sec",
-            "extra": "81 samples"
-          },
-          {
-            "name": "Block 9422908",
-            "value": 2076,
-            "range": "±1.50%",
-            "unit": "ops/sec",
-            "extra": "83 samples"
-          },
-          {
-            "name": "Block 9422909",
-            "value": 2000,
-            "range": "±1.34%",
-            "unit": "ops/sec",
-            "extra": "92 samples"
-          },
-          {
-            "name": "Block 9422910",
-            "value": 1552,
-            "range": "±13.98%",
-            "unit": "ops/sec",
-            "extra": "68 samples"
-          },
-          {
-            "name": "Block 9422911",
-            "value": 1916,
-            "range": "±1.53%",
-            "unit": "ops/sec",
-            "extra": "90 samples"
-          },
-          {
-            "name": "Block 9422912",
-            "value": 1914,
-            "range": "±1.84%",
-            "unit": "ops/sec",
-            "extra": "82 samples"
-          },
-          {
-            "name": "Block 9422913",
-            "value": 1837,
-            "range": "±2.47%",
-            "unit": "ops/sec",
-            "extra": "79 samples"
-          },
-          {
-            "name": "Block 9422914",
-            "value": 1848,
-            "range": "±2.12%",
-            "unit": "ops/sec",
-            "extra": "87 samples"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -2820,6 +2726,100 @@ window.BENCHMARK_DATA = {
             "range": "±7.08%",
             "unit": "ops/sec",
             "extra": "69 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jochembrouwer96@gmail.com",
+            "name": "Jochem Brouwer",
+            "username": "jochem-brouwer"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c8fecf712c5983b18c8b465ed9979888b2daa191",
+          "message": "VM: Fix Blake2B with messages with a length >= 5 (#1486)\n\n* vm: blake2f: add test\r\n\r\n* vm: blake2f: fix Uint32 little-endian conversion\r\nvm: lint\r\n\r\n* vm: blake2f: cleanup fixed code\r\n\r\nCo-authored-by: Holger Drewes <Holger.Drewes@gmail.com>",
+          "timestamp": "2021-09-23T11:24:43+02:00",
+          "tree_id": "0d3e24e378ca8b028940ea32e1ca72467188d198",
+          "url": "https://github.com/ethereumjs/ethereumjs-monorepo/commit/c8fecf712c5983b18c8b465ed9979888b2daa191"
+        },
+        "date": 1632389439704,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "Block 9422905",
+            "value": 20068,
+            "range": "±6.01%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422906",
+            "value": 20794,
+            "range": "±2.94%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422907",
+            "value": 20224,
+            "range": "±3.64%",
+            "unit": "ops/sec",
+            "extra": "74 samples"
+          },
+          {
+            "name": "Block 9422908",
+            "value": 14378,
+            "range": "±13.72%",
+            "unit": "ops/sec",
+            "extra": "54 samples"
+          },
+          {
+            "name": "Block 9422909",
+            "value": 19570,
+            "range": "±3.71%",
+            "unit": "ops/sec",
+            "extra": "73 samples"
+          },
+          {
+            "name": "Block 9422910",
+            "value": 19682,
+            "range": "±3.85%",
+            "unit": "ops/sec",
+            "extra": "72 samples"
+          },
+          {
+            "name": "Block 9422911",
+            "value": 18662,
+            "range": "±6.11%",
+            "unit": "ops/sec",
+            "extra": "69 samples"
+          },
+          {
+            "name": "Block 9422912",
+            "value": 10865,
+            "range": "±18.68%",
+            "unit": "ops/sec",
+            "extra": "41 samples"
+          },
+          {
+            "name": "Block 9422913",
+            "value": 13841,
+            "range": "±16.17%",
+            "unit": "ops/sec",
+            "extra": "61 samples"
+          },
+          {
+            "name": "Block 9422914",
+            "value": 17161,
+            "range": "±4.64%",
+            "unit": "ops/sec",
+            "extra": "63 samples"
           }
         ]
       }
